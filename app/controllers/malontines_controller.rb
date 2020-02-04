@@ -1,0 +1,2 @@
+class MalontinesController < ApplicationController
+end
