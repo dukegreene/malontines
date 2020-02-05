@@ -1,0 +1,7 @@
+<h1>Malontines</h1>
+
+<ul class="malontines-list">
+    <% @malontines.each do |malontine| %>
+      <%= render "list_item", malontine: malontine %>
+    <% end %>
+</ul>
