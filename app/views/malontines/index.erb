@@ -1,0 +1,9 @@
+<h1 class="large-title">Malontines</h1>
+
+<div class="malontines-container">
+  <ul class="malontines-list">
+    <% @malontines.each do |malontine| %>
+      <%= render "list_item", malontine: malontine %>
+    <% end %>
+  </ul>
+</div>
