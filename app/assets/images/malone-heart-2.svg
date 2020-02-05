@@ -19,7 +19,7 @@
    width="500"
    height="500">
    <defs>
-     <pattern id="img1" patternUnits="userSpaceOnUse" width="1000" height="1000">
+     <pattern id="img2" patternUnits="userSpaceOnUse" width="1000" height="1000">
        <image xlink:href="https://i.imgur.com/SbxSx5P.jpg" x="-150" y="-250" width="1000" height="1000" />
      </pattern>
    </defs>
@@ -57,7 +57,7 @@
        transform="translate(115.1,251.72)"
        id="path2361"
        inkscape:connector-curvature="0"
-       fill="url(#img1)"
+       fill="url(#img2)"
     />
   </g>
   <metadata

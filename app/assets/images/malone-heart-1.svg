@@ -20,7 +20,7 @@
    height="500">
    <defs>
      <pattern id="img1" patternUnits="userSpaceOnUse" width="1000" height="1000">
-       <image xlink:href="https://i.imgur.com/WclrYZ1.jpg" x="-200" y="-200" width="700" height="800" />
+       <image xlink:href="https://i.imgur.com/WclrYZ1.jpg" x="-200" y="-190" width="700" height="800" />
      </pattern>
    </defs>
   <sodipodi:namedview
