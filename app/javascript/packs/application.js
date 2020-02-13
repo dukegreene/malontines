@@ -14,3 +14,10 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+document.addEventListener("DOMContentLoaded", function(){
+  const titlesAndFiles = {
+    "Big Smile Malone": "malone-1.jpg"
+  }
+  // TODO: Add on change listener to #malontine_malone_id, it should take the selected name and display an image according to a JSON linking names to image file names
+});

@@ -1,0 +1,24 @@
+<h1 class="mb-4">
+  This is <%= same_users?(@user, current_user) ? "your" : @user.username.titleize + "'s" %> profile.
+
+  <% if same_users?(@user, current_user) %>
+    <%= link_to "You can edit it.", "/users/#{@user.id}/edit" %>
+  <% end %>
+</h1>
+
+<% if @user.malontines.any? %>
+  <h2 class="mb-4">Created Malontines:</h2>
+
+  <ul class="malontines-list">
+    <% @user.ordered_malontines.each do |malontine| %>
+      <h3><%= malontine.title %></h3>
+      <%= render "malontines/list_item", malontine: malontine %>
+    <% end %>
+  </ul>
+<% else %>
+  <% if same_users?(@user, current_user) %>
+    <p>...no Malontines from you just yet... <%= link_to "wanna fix that?", new_malontine_path %></p>
+  <% else %>
+    <p>...no Malontines from <%= @user.username.titleize %> just yet...</p>
+  <% end %>
+<% end %>

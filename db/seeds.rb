@@ -27,7 +27,7 @@ love_notes = LoveNote.create([
   { message: "DEAR HEART" },
   { message: "COOL FOOL" },
   { message: "STAY" },
-  { message: "YUO BET" },
+  { message: "YOU BET" },
   { message: "R U SHY?" },
   { message: "LOVE BUG" },
   { message: "SUN FLOWER" },

@@ -1,0 +1,152 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ * TODO: DEBUG FOLLOWING THREE REQUIRES
+ * require jquery-rails
+ * require popper
+ * require bootstrap-sprockets
+ *= require_tree .
+ *= require_self
+ */
+
+$primary: purple;
+$secondary: magenta;
+$success: #b9ffe5;
+$danger: navy;
+$light: #e8cdff;
+
+@import "bootstrap";
+
+.form-control {
+  display: inline-block;
+  width: auto;
+}
+
+html, body {
+  background: $light;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.color-flamingo {
+  color: #ffb9f5 !important;
+}
+
+.color-sky {
+  color: #beeaff !important;
+}
+
+.color-purps {
+  color: #e8cdff !important;
+}
+
+.color-grassy {
+  color: #b9ffe5 !important;
+}
+
+.color-salmon {
+  color: #ffd1d1 !important;
+}
+
+.app-container {
+  text-align: center;
+}
+
+.large-title {
+  font-size: 70px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.single-malone {
+  position: relative;
+  height: 520px;
+  width: 550px;
+  overflow: hidden;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.malone-svg,
+.malone-svg svg {
+  position: absolute;
+  z-index: 2;
+}
+
+.love-note-overlay-center,
+.love-note-overlay-left,
+.love-note-overlay-right {
+  font-size: 70px;
+  color: pink;
+  height: 208px;
+  width: 300px;
+  margin: 0 auto;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.in-heart-link {
+  position: relative;
+  top: -365px;
+  display: inline-block;
+  -webkit-text-stroke: 2px black;
+}
+
+.in-heart-link:link,
+.in-heart-link:hover,
+.in-heart-link:visited,
+.in-heart-link:active {
+  text-decoration: none;
+}
+
+.love-note-overlay-left {
+  top: -420px;
+  left: -80px;
+}
+
+.love-note-overlay-right {
+  top: -420px;
+  right: -80px;
+}
+
+.malontines-container {
+  text-align: center;
+}
+
+.pagination {
+  padding-right: 0;
+}
+
+.malontines-list {
+  display: inline-block;
+  text-align: center;
+}
+
+.malontine-in-list {
+  height: 520px;
+}
+
+.malontine-creator {
+  position: relative;
+  bottom: 245px;
+}
+
+footer {
+  display: inline-block;
+  bottom: 10px;
+  padding-top: 10px;
+}
+
+.errors {
+  color: magenta;
+}

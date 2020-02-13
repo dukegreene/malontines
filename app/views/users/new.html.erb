@@ -1,0 +1,23 @@
+<h1 class="mb-4">Sign Up!</h1>
+
+<%= render "layouts/errors", errors: flash[:errors] %>
+
+<%= form_for @user, class: "mb-4" do |f| %>
+  <p>
+    <%= f.label :username, "Your username:" %>
+    <%= f.text_field :username, class: "form-control" %>
+  </p>
+  <p>
+    <%= f.label :password, "Your password:" %>
+    <%= f.password_field :password, class: "form-control" %>
+  </p>
+  <p>
+    <%= f.label :password_confirmation, "Confirm Password:" %>
+    <%= f.password_field :password_confirmation, class: "form-control" %>
+  </p>
+  <p>
+    <%= f.submit class: "btn btn-outline-primary" %>
+  </p>
+<% end %>
+
+<%= link_to "Already a user? Log in!", login_path %>

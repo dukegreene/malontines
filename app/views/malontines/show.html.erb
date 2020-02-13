@@ -1,0 +1,16 @@
+<h1><%= @malontine.title %></h1>
+
+<div class="single-malone">
+  <%= link_to svg(@malontine.malone.svg_url), @malontine %>
+  <a class="in-heart-link" href="<%= malontine_path(@malontine) %>"><h1 class="love-note-overlay-<%= @malontine.malone.note_position %> color-<%= random_pastel %>"><%= @malontine.love_note_message %></h1></a>
+  <h3 class="malontine-creator">(created by <%= @malontine.creator.username %>)</h3>
+</div>
+
+<% if logged_in? && current_user.same_as?(@malontine.creator) %>
+  <p><%= link_to "Edit This 👨🏽‍🌾", edit_malontine_path %></p>
+  <p><%= link_to "Delete This 😱", malontine_path, method: :delete %></p>
+<% end %>
+
+<p><%= link_to "Back", malontines_path %></p>
+
+<footer class="footer color-sky">app by dukegreene. heart svg by agone, used under creative commons license.</footer>
