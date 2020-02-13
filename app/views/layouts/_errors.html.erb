@@ -1,0 +1,8 @@
+<% if errors %>
+  <div class="errors mb-4">
+    <h3>Welp. That didn't work. Here's why:</h3>
+    <% errors.each do |error| %>
+      <p class="error mb-0"><%= error %></p>
+    <% end %>
+  </div>
+<% end %>

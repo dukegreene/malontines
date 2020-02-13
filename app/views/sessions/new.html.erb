@@ -1,0 +1,17 @@
+<% if flash[:auth_redirect_msg] %>
+  <p class="auth-redirect-flash"><%= flash[:auth_redirect_msg] %></p>
+<% end %>
+
+<h1 class="mb-4">Log In!</h1>
+
+<% if flash[:message] %>
+  <p class="errors mb-4"><%= flash[:message] %><p>
+<% end %>
+
+<%= form_tag "/login", class: "mb-4" do %>
+  <p>Your username: <%= text_field_tag :username, "", class: "form-control" %></p>
+  <p>Your password: <%= password_field_tag :password, "", class: "form-control" %></p>
+  <%= submit_tag "Log In", class: "btn btn-outline-primary" %>
+<% end %>
+
+<%= link_to "Not a user? Sign up!", new_user_path %>

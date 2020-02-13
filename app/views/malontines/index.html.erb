@@ -1,9 +1,11 @@
-<h1 class="large-title">Malontines</h1>
 
 <div class="malontines-container">
+  <%= render "pagination" %>
   <ul class="malontines-list">
     <% @malontines.each do |malontine| %>
       <%= render "list_item", malontine: malontine %>
     <% end %>
   </ul>
+  <%= render "pagination" %>
 </div>
+<footer class="footer color-sky">app by dukegreene. heart svg by agone, used under creative commons license.</footer>

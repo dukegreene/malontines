@@ -1,0 +1,24 @@
+<%= render "layouts/errors", errors: flash[:errors] %>
+
+<%= form_for malontine do |f| %>
+  <p>
+    <%= f.label :title, "Title:" %>
+    <%= f.text_field :title, class: "form-control" %>
+  </p>
+  <p>
+    <%= f.label :love_note_message, "Add a love note:" %>
+    <%= f.text_field :love_note_message, maxlength: 15, class: "form-control" %>
+  </p>
+  <p>
+    <%= f.label :love_note_id, "...or choose one:" %>
+    <%= f.collection_select :love_note_id, love_notes, :id, :message, class: "form-control" %>
+  </p>
+  <p>
+    <%= f.label :malone_id, "Photo:" %>
+    <%= f.collection_select :malone_id, malones, :id, :name, class: "form-control" %>
+  </p>
+
+    <%= f.submit "Post Malontine", class: "btn btn-outline-primary" %>
+<% end %>
+
+<br>
